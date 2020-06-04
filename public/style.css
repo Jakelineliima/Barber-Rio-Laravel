@@ -1,0 +1,505 @@
+html, body {
+    font-family: poppins;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #263238;
+}
+
+a:hover {
+    color: rgb(206, 199, 198);
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
+}
+
+ul {
+    color: transparent;
+}
+
+div.menu-bar ul ul {
+    display: none;
+    color: transparent;
+}
+
+div.menu-bar li:hover>ul {
+    display: block;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: #263238;
+    margin-top: 119px;
+    margin-bottom: -20px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: rgb(206, 199, 198);
+    text-decoration: none;
+}
+
+.menuburgue {
+    display: none;
+}
+
+.menu-bar ul, li {
+    color: transparent;
+}
+
+.container {
+    padding: 25px;
+}
+
+.text-center {
+    margin-top: 36px;
+}
+
+.edit {
+    background-color: #000;
+    color: #fff;
+}
+
+.listapag ul, li {
+    color: #000;
+}
+
+.listapag {
+    margin: 34px 0 34px
+}
+.txtcad{
+    text-align: center;
+}
+.gridagenda {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 50%;
+}
+
+.gridaviso {
+    grid-column: 1/3;
+}
+
+.userdados {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+.gridft2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.fotouser {
+    width: 10rem;
+    border-radius: 14px;
+}
+
+.trocafoto {
+    width: 25%;
+}
+
+.gridteste {
+    display: grid;
+    grid-template-rows: 43px 156px 41px 35px;
+    position: absolute;
+    margin-left: 69%;
+}
+
+.gridft {
+    grid-row: 3/4;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.txtuser {
+    grid-row: 4/5;
+    text-align: center;
+    margin-left: 1px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 7%;
+}
+*/
+
+.menuh ul, li {
+    color: transparent;
+}
+
+.btnuser {
+    float: inline-end;
+}
+
+.edit {
+    float: right;
+    margin-right: 108px;
+}
+
+.edit:hover {
+    color: #fff;
+}
+
+.datas {
+    background: #000;
+    color: #fff;
+    width: 37%;
+    height: 81px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 2%;
+}
+
+.btneditar {
+    width: 31%;
+}
+
+.menu-bar {
+    display: flex;
+    padding-top: 28px
+}
+
+.imgmeio {
+    width: 310px
+}
+
+/*css Murillo */
+
+.fonte {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tamanho {
+    height: 600px;
+}
+
+.hrfooter {
+    background: #fff;
+    border-radius: 100px;
+    width: 90%;
+}
+
+.hruser {
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+    grid-column: 1/3;
+}
+
+.hrsobre {
+    background-color: #000;
+    width: 100%;
+    margin: 103px 0 103px 0;
+}
+
+.tamanhof {
+    width: 60px;
+}
+
+/* css joice*/
+
+.entrar {
+    width: 13%;
+}
+
+.bar img {
+    width: 23%
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.baralign {
+    justify-content: space-between;
+    margin-top: 87px;
+}
+
+.barimgmeio {
+    margin-top: 87px;
+}
+
+.equipesobre img {
+    width: 251px;
+    height: 221px;
+}
+
+.equipeid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.equipeid p {
+    margin-top: 22px;
+    text-align: inherit
+}
+
+.equipesobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.equipeconhecer {
+    margin-top: 92px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.preencher {
+    width: 49%;
+}
+
+.criarconta {
+    color: #000;
+}
+
+.criarconta:hover {
+    color: #000;
+}
+
+.hrform {
+    width: 50%;
+    margin-right: 50%;
+    border: 2px #000;
+    color: #000;
+}
+
+.hora {
+    display: flex;
+}
+
+.comentarios {
+    font-size: 30px;
+    margin-top: 39px
+}
+
+.cardwork {
+    max-width: 50rem;
+    background: #000;
+    border-radius: 16px;
+    background-color: #263238;
+}
+
+.btnwork {
+    border-radius: 11px;
+}
+
+.txtwork {
+    margin: 16px 0px 0 0px;
+}
+
+.hrwork {
+    width: 62%;
+    margin-bottom: 52px;
+    background: #000
+}
+
+.txtbar {
+    font-size: initial;
+    margin-top: 31px;
+    text-align: center;
+}
+
+.txt0home {
+    font-size: 30px
+}
+
+.txt1home {
+    text-align: justify;
+}
+
+.txt2home {
+    text-align: inherit;
+}
+
+.imputs {
+    width: 45%;
+}
+
+.menubg:hover {
+    color: #fff;
+}
+
+.txtsobre {
+    text-align: justify;
+}
+
+.cardwork {
+    margin-top: 108px;
+}
+
+@media screen and (min-width:964px) {
+    .menu {
+        display: none
+    }
+}
+
+@media screen and (max-width:965px) {
+    /*
+    .menu {
+        width: 35px
+    }
+    .menu2 {
+        display: none
+    }*/
+    /*Meus agendamentos*/
+    .userdados {
+        display: flex;
+        flex-direction: column;
+    }
+    .trocafoto {
+        width: 22%;
+    }
+    .dados {
+        font-size: 14px
+    }
+    .gridteste {
+        margin-left: 53%;
+    }
+    .preencher {
+        width: 100%;
+    }
+    .entrar {
+        width: 100%;
+    }
+    .menuburgue {
+        display: block;
+    }
+    .menu-bar {
+        display: none;
+    }
+    .menubtn a {
+        color: #fff;
+    }
+    .menusub {
+        background-color: transparent;
+    }
+    .dropdown a {
+        text-align: inherit;
+        ;
+    }
+    .iconburgue img {
+        width: 30px;
+    }
+    .baralign {
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .bar img {
+        width: 65%;
+        margin-top: 12px;
+    }
+    .home {
+        display: block;
+    }
+    .comentarios {
+        margin-top: 217px;
+    }
+    .imputs {
+        width: 100%;
+    }
+    .agenda {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .home {
+        display: grid;
+    }
+    .imgmeio {
+        width: 100%;
+    }
+    .logo img {
+        width: 1px
+    }
+}
+
+@media screen and (max-width:401px) {
+    .txt0home {
+        font-size: 20px;
+    }
+    .comentarios {
+        font-size: 17px;
+    }
+    .logo img {
+        width: 135px;
+    }
+    .dropmenu {
+        position: relative;
+    }
+    .dropdire {
+        text-align: inherit
+    }
+    .txtcad{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .rodape {
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .menuburgue {
+        text-align: right;
+    }
+    .comentarios {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .logoimg {
+        text-align: center;
+    }
+    .imgwork {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .txtwork {
+        font-size: 14px;
+    }
+    .hrwork {
+        width: 100%;
+    }
+    .tamanho {
+        max-width: max-content;
+    }
+    .userdados {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .hruser {
+        grid-row: 3/4;
+    }
+    .gridaviso {
+        grid-row: 5/6;
+    }
+    .gridteste1 {
+        grid-row: 1/2;
+        grid-column: 1/2
+    }
+    .gridcard {
+        grid-row: 4/5;
+    }
+}
