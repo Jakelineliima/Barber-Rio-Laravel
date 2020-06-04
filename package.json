@@ -24,6 +24,6 @@
         "@fullcalendar/list": "^4.4.0",
         "@fullcalendar/timegrid": "^4.4.0",
         "bootstrap": "^4.4.1",
-        "jquery": "^3.4.1"
+        "jquery": "^3.5.0"
     }
 }
