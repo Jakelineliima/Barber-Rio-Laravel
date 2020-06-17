@@ -23,11 +23,15 @@
     </div>
     <div class="col-md-4 mb-3">
       <label for="data">Data nascimento:</label>
-      <input type="date" class="form-control" id="zip" placeholder="Dia/Mês/Ano" required>
+      <input type="date" class="form-control" id="zip" placeholder="Dia/Mês/Ano">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="phone">Telefone</label>
+      <input type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
     </div>
     <div class="col mb-4">
       <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+      <input  class="form-control" id="email" placeholder="nome@exemplo.com">
     </div>
   </div>
   <div class="row">
@@ -44,7 +48,6 @@
     <div class="col-md-6 mb-4">
       <button class="btn btn-lg btn-success btn-block entrar2" type="submit">Cadastro</button>
     </div>
-  </div>
   </div>
 </form>
 @endsection

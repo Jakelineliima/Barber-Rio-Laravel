@@ -54,4 +54,6 @@ Route::get('/agendar', function () {
     return view('site.agendar');
 })->name('site.agendar');
 
-
+Route::get('admin/dash', function () {
+    return view('admin/dash');
+})->name('admin/dash');

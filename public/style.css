@@ -8,10 +8,12 @@ header {
     background: #263238;
 }
 
+/*
 a:hover {
     color: rgb(206, 199, 198);
     text-decoration: none;
 }
+*/
 
 a {
     color: #fff;
@@ -58,6 +60,23 @@ footer a:hover {
     color: transparent;
 }
 
+.menudrop:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.menudrop {
+    color: #000
+}
+
+.fixamenu {
+    position: fixed;
+}
+
+.fxagend {
+    margin-left: -65px;
+}
+
 .container {
     padding: 25px;
 }
@@ -78,9 +97,11 @@ footer a:hover {
 .listapag {
     margin: 34px 0 34px
 }
-.txtcad{
+
+.txtcad {
     text-align: center;
 }
+
 .gridagenda {
     display: grid;
     grid-template-rows: auto;
@@ -215,6 +236,12 @@ footer a:hover {
     width: 13%;
 }
 
+.entrar2 {
+    justify-content: end;
+    width: 60%;
+    float: inline-end;
+}
+
 .bar img {
     width: 23%
 }
@@ -345,6 +372,12 @@ footer a:hover {
     margin-top: 108px;
 }
 
+@media screen and (max-width:991px) {
+    .entrar2 {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width:964px) {
     .menu {
         display: none
@@ -428,7 +461,7 @@ footer a:hover {
         width: 100%;
     }
     .logo img {
-        width: 1px
+        width: 100%
     }
 }
 
@@ -448,7 +481,7 @@ footer a:hover {
     .dropdire {
         text-align: inherit
     }
-    .txtcad{
+    .txtcad {
         font-size: 22px;
     }
 }

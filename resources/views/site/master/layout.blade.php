@@ -41,15 +41,15 @@
       </ul>
       <ul>
         <li>
-          <a href="#">Nossos Trabalhos</a>
-          <ul>
-            <li>
-              <a href="{{ route('site.barba') }}">Barba</a>
+          <a href="#" >Nossos Trabalhos</a>
+          <ul class="fixamenu">
+            <li class="dropdown-item">
+              <a href="{{ route('site.barba') }}" >Barba</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="{{ route('site.bigode') }}">Bigode</a>
             </li>
-            <li>
+            <li class="dropdown-item">
               <a href="{{ route('site.cabelo') }}">Cabelo</a>
             </li>
           </ul>
@@ -59,12 +59,12 @@
       <ul>
         <li>
           <a href="#">Agenda</a>
-          <ul>
+          <ul class="fixamenu fxagend">
             <li>
-              <a href="{{ route('site.agendar') }}">Agendar </a>
+              <a class="dropdown-item" href="{{ route('site.agendar') }}">Agendar </a>
             </li>
             <li>
-              <a href="{{ route('site.meusagendamento') }}">Ver agenda</a>
+              <a class="dropdown-item" href="{{ route('site.meusagendamento') }}">Ver agenda</a>
             </li>
           </ul>
         </li>
@@ -73,12 +73,12 @@
       <ul>
         <li>
           <a href="#">Minha Conta</a>
-          <ul>
+          <ul class="fixamenu fxagend">
             <li>
-              <a href="{{ route('site.login') }}">Entrar</a>
+              <a class="dropdown-item" href="{{ route('site.login') }}">Entrar</a>
             </li>
             <li>
-              <a href="{{ route('site.cadastro') }}">Criar conta</a>
+              <a class="dropdown-item" href="{{ route('site.cadastro') }}">Criar conta</a>
             </li>
           </ul>
         </li>
@@ -87,9 +87,9 @@
       <ul>
         <li>
           <a href="#">Sobre</a>
-          <ul>
-            <li>
-              <a href="{{ route('site.sobre') }}">Quem somos?</a>
+          <ul class="fixamenu fxagend">
+            <li >
+              <a class="dropdown-item" href="{{ route('site.sobre') }}">Quem somos?</a>
             </li>
           <!--  <li>
               <a href="{{ route('site.equipe') }}">Nossa equipe</a>
@@ -117,49 +117,49 @@
         </button>
 
 
-        <div class="dropdown navbar-nav mr-auto dropmenu ">
+        <div class="dropdown navbar-nav mr-auto dropmenu">
           <a class="btn  dropdown-toggle menubg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Nossos Trabalhos
           </a>
           <div class="dropdown-menu menusub" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="{{ route('site.barba') }}">Barba</a>
-            <a class="dropdown-item" href="{{ route('site.bigode') }}">Bigode</a>
-            <a class="dropdown-item" href="{{ route('site.cabelo') }}">Cabelo</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.barba') }}">Barba</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.bigode') }}">Bigode</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.cabelo') }}">Cabelo</a>
           </div>
         </div>
 
-        <div class="dropdown navbar-nav mr-auto">
-          <a class="btn dropdown-toggle menubg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+        <div class="dropdown navbar-nav mr-auto dropmenu">
+          <a class="btn  dropdown-toggle menubg"" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Agenda
           </a>
           <div class="dropdown-menu menusub" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="{{ route('site.agendar') }}">Agendar</a>
-            <a class="dropdown-item" href="{{ route('site.meusagendamento') }}">Ver agendamento</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.agendar') }}">Agendar</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.meusagendamento') }}">Ver agendamento</a>
 
           </div>
         </div>
 
-        <div class="dropdown navbar-nav mr-auto">
+        <div class="dropdown navbar-nav mr-auto dropmenu">
           <a class="btn  dropdown-toggle menubg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Minha conta
           </a>
           <div class="dropdown-menu menusub" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="{{ route('site.login') }}">Entrar na minha conta</a>
-            <a class="dropdown-item" href="{{ route('site.cadastro') }}">Criar conta</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.login') }}">Entrar na minha conta</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.cadastro') }}">Criar conta</a>
 
           </div>
         </div>
 
-        <div class="dropdown navbar-nav mr-auto">
+        <div class="dropdown navbar-nav mr-auto dropmenu">
           <a class="btn  dropdown-toggle menubg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Sobre
           </a>
           <div class="dropdown-menu menusub" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="{{ route('site.sobre') }}">Quem somos?</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.sobre') }}">Quem somos?</a>
             <!---<a class="dropdown-item" href="{{ route('site.equipe') }}">Nossa equipe</a>--->
 
           </div>
