@@ -36,21 +36,21 @@
 
       <ul>
         <li>
-          <a href="{{ route('site.home') }}">Inicio</a>
+          <a style="color: #fff" href="{{ route('site.home') }}">Inicio</a>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="#" >Nossos Trabalhos</a>
+          <a href="#" style="color: #fff">Nossos Trabalhos</a>
           <ul class="fixamenu">
-            <li class="dropdown-item">
-              <a href="{{ route('site.barba') }}" >Barba</a>
+            <li>
+              <a  href="{{ route('site.barba') }}">Barba</a>
             </li>
-            <li class="dropdown-item">
-              <a href="{{ route('site.bigode') }}">Bigode</a>
+            <li>
+              <a  href="{{ route('site.bigode') }}">Bigode</a>
             </li>
-            <li class="dropdown-item">
-              <a href="{{ route('site.cabelo') }}">Cabelo</a>
+            <li>
+              <a  href="{{ route('site.cabelo') }}">Cabelo</a>
             </li>
           </ul>
         </li>
@@ -58,13 +58,13 @@
 
       <ul>
         <li>
-          <a href="#">Agenda</a>
+          <a style="color: #fff" href="#">Agenda</a>
           <ul class="fixamenu fxagend">
             <li>
-              <a class="dropdown-item" href="{{ route('site.agendar') }}">Agendar </a>
+              <a style="margin-left: 16px;" href="{{ route('site.agendar') }}">Agendar </a>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ route('site.meusagendamento') }}">Ver agenda</a>
+              <a style="margin-left: 16px;" href="{{ route('site.meusagendamento') }}">Ver agenda</a>
             </li>
           </ul>
         </li>
@@ -72,13 +72,13 @@
 
       <ul>
         <li>
-          <a href="#">Minha Conta</a>
+          <a style="color: #fff" href="#">Minha Conta</a>
           <ul class="fixamenu fxagend">
             <li>
-              <a class="dropdown-item" href="{{ route('site.login') }}">Entrar</a>
+              <a style="margin-left: 34px;" href="{{ route('site.login') }}">Entrar</a>
             </li>
             <li>
-              <a class="dropdown-item" href="{{ route('site.cadastro') }}">Criar conta</a>
+              <a style="margin-left: 33px;" href="{{ route('site.cadastro') }}">Criar conta</a>
             </li>
           </ul>
         </li>
@@ -86,30 +86,27 @@
 
       <ul>
         <li>
-          <a href="#">Sobre</a>
+          <a style="color: #fff" href="#">Sobre</a>
           <ul class="fixamenu fxagend">
-            <li >
-              <a class="dropdown-item" href="{{ route('site.sobre') }}">Quem somos?</a>
+            <li>
+              <a href="{{ route('site.sobre') }}">Quem somos?</a>
             </li>
-          <!--  <li>
+            <!--  <li>
               <a href="{{ route('site.equipe') }}">Nossa equipe</a>
             </li>--->
           </ul>
         </li>
       </ul>
-
-
-
     </div>
 
-    
+
     <nav class="navbar  navbar-1 white menuburgue">
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      <button class="navbar-toggler menuburgue2" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="iconburgue "><img src="../img/menu.svg" alt=""></span></button>
 
-      
+
       <div class="collapse navbar-collapse menubtn" id="navbarSupportedContent15">
 
         <button class="btn">
@@ -130,7 +127,7 @@
         </div>
 
         <div class="dropdown navbar-nav mr-auto dropmenu">
-          <a class="btn  dropdown-toggle menubg"" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+          <a class="btn  dropdown-toggle menubg"" href=" #" role="button" id="dropdownMenuLink" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Agenda
           </a>
@@ -165,7 +162,7 @@
           </div>
         </div>
       </div>
-     
+
     </nav>
 
   </header>

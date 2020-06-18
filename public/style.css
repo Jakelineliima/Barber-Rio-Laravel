@@ -6,17 +6,20 @@ header {
     display: flex;
     justify-content: space-around;
     background: #263238;
+    height: 170px;
 }
 
-/*
 a:hover {
-    color: rgb(206, 199, 198);
+    border-bottom: 2px #fff solid;
     text-decoration: none;
+    color: #fff;
 }
-*/
-
+.fixamenu{
+    text-align: center;
+}
 a {
     color: #fff;
+    text-decoration: none;
 }
 
 ul {
@@ -58,15 +61,6 @@ footer a:hover {
 
 .menu-bar ul, li {
     color: transparent;
-}
-
-.menudrop:hover {
-    color: #000;
-    background-color: #fff;
-}
-
-.menudrop {
-    color: #000
 }
 
 .fixamenu {
@@ -393,6 +387,9 @@ footer a:hover {
         display: none
     }*/
     /*Meus agendamentos*/
+    .menuburgue2 {
+        padding: 14px
+    }
     .userdados {
         display: flex;
         flex-direction: column;
@@ -426,7 +423,6 @@ footer a:hover {
     }
     .dropdown a {
         text-align: inherit;
-        ;
     }
     .iconburgue img {
         width: 30px;
@@ -483,6 +479,9 @@ footer a:hover {
     }
     .txtcad {
         font-size: 22px;
+    }
+    .menuburgue2 {
+        padding: 3px;
     }
 }
 
