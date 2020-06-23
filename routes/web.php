@@ -57,3 +57,15 @@ Route::get('/agendar', function () {
 Route::get('admin/dash', function () {
     return view('admin/dash');
 })->name('admin/dash');
+
+
+//controlle
+Route::prefix('admin')->namespace('Admin')->group(function(){
+    Route::resource('comentario', 'ComentarioController');
+    Route::resource('cadastro', 'CadastroController');
+});
+
+
+
+
+

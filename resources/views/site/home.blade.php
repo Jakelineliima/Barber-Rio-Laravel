@@ -25,7 +25,10 @@
       para cuidar de você como merece!</p>
   </div>
   <h1 class=" d-flex justify-content-center comentarios">COMENTÁRIO DOS CLIENTES</h1>
+   
 
+
+  <!-----
   <div id="carouselExampleControls" class="carousel slide container" data-ride="carousel">
 
     <div class="carousel-inner" style="width: 67%">
@@ -57,21 +60,28 @@
       <img src="../img/seta direita.svg" alt="seta para a direita">
       <span class="sr-only text-dark">Próximo</span>
     </a>
-  </div>
-  >
+  </div>--->
+
+
   <h2 style="text-align: center; font-size:30px; margin-top:39px">Envie sua opinião sobre nossos serviços</h2>
-  <form>
+
+
+  <form action="{{ route('comentario.store') }}" method="post">
+    @csrf
+
+
     <div class="form-group">
       <label for="exampleFormControlInput1">
         <h4>Nome:</h4>
       </label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: Alex Augusto">
+      <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ex: Alex Augusto">
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">
         <h4>Endereço de email</h4>
       </label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ex: alex@gmail.com">
+      <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+        placeholder="Ex: alex@gmail.com">
     </div>
 
 
@@ -79,11 +89,10 @@
       <label for="exampleFormControlTextarea1">
         <h4>Mensagem:</h4>
       </label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+      <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3"
         placeholder="Digite sua mensagem"></textarea>
     </div>
-  </form>
-  <button class="btn btn-lg btn-success" style="float: inline-end" type="submit">Enviar</button>
+    <button class="btn btn-lg btn-success" style="float: inline-end" type="submit">Enviar</button>
 </div>
 
 @endsection
