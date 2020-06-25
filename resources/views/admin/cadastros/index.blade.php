@@ -16,6 +16,17 @@
             <dd>{{ $cadastro->phone }}</dd>
             <dd>{{ $cadastro->email }}</dd>
             <dd>{{ $cadastro->password }}</dd>
+
+            <a href="{{ route('cadastro.edit' ,['cadastro'=>$cadastro->id]) }}" class="btn">Editar</a>
+            <form action="{{ route('cadastro.destroy',['cadastro'=>$cadastro->id]) }}" method="POST">
+                @csrf
+                @method('DELETE')
+                
+                <button type="submit">
+                    Excluir
+                </button>
+
+            </form>
             @endforeach
 
         </tbody>

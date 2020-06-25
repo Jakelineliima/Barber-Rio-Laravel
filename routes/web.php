@@ -63,6 +63,7 @@ Route::get('admin/dash', function () {
 Route::prefix('admin')->namespace('Admin')->group(function(){
     Route::resource('comentario', 'ComentarioController');
     Route::resource('cadastro', 'CadastroController');
+    Route::resource('agenda', 'AgendaController');
 });
 
 

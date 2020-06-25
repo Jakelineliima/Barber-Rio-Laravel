@@ -4,13 +4,13 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Cadastro;
+use App\Agenda;
 
-class CadastroController extends Controller
+class AgendaController extends Controller
 {
-    public function __construct(Cadastro $cadastro)
+    public function __construct(Agenda $agenda)
     {
-        $this->cadastro = $cadastro;
+        $this->agenda = $agenda;
     }
     /**
      * Display a listing of the resource.
@@ -19,8 +19,8 @@ class CadastroController extends Controller
      */
     public function index()
     {
-        $cadastros = $this->cadastro->paginate(10);
-        return view('admin.cadastros.index', compact('cadastros'));
+        $agendas = $this->agenda->paginate(10);
+        return view('admin.agendas.index', compact('agendas'));
     }
 
     /**
@@ -30,7 +30,7 @@ class CadastroController extends Controller
      */
     public function create()
     {
-        return view('admin.cadastro.create');
+        return view('admin.agenda.create');
     }
 
     /**
@@ -42,9 +42,9 @@ class CadastroController extends Controller
     public function store(Request $request)
     {
         $dados = $request->all();
-        $this->cadastro->create($dados);
+        $this->agenda->create($dados);
 
-        return redirect()->route('cadastro.index');
+        return redirect()->route('agenda.index');
     }
 
     /**
@@ -66,8 +66,8 @@ class CadastroController extends Controller
      */
     public function edit($id)
     {
-        $cadastro =$this->cadastro->findOrFail($id);
-        return view('admin.cadastros.edit',compact('cadastro'));
+        $agenda = $this->agenda->findOrFail($id);
+        return view('admin.agendas.edit', compact('agenda'));
     }
 
     /**
@@ -80,9 +80,9 @@ class CadastroController extends Controller
     public function update(Request $request, $id)
     {
         $dados = $request->all();
-        $cadastro = $this->cadastro->findOrFail($id);
-        $cadastro->update($dados);
-        return redirect()->route('cadastro.index');
+        $agenda = $this->agenda->findOrFail($id);
+        $agenda->update($dados);
+        return redirect()->route('agenda.index');
     }
 
     /**
@@ -93,7 +93,7 @@ class CadastroController extends Controller
      */
     public function destroy($id)
     {
-        $cadastro = $this->cadastro->findOrFail($id);
-        $cadastro->delete();
+        $agenda = $this->agenda->findOrFail($id);
+        $agenda->delete();
     }
 }

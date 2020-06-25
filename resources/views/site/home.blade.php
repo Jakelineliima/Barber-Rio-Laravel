@@ -62,13 +62,10 @@
     </a>
   </div>--->
 
-
   <h2 style="text-align: center; font-size:30px; margin-top:39px">Envie sua opinião sobre nossos serviços</h2>
-
 
   <form action="{{ route('comentario.store') }}" method="post">
     @csrf
-
 
     <div class="form-group">
       <label for="exampleFormControlInput1">
@@ -83,7 +80,6 @@
       <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
         placeholder="Ex: alex@gmail.com">
     </div>
-
 
     <div class="form-group">
       <label for="exampleFormControlTextarea1">
