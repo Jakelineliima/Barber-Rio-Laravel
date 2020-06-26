@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use PhpParser\Node\Stmt\Return_;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('site.home');
-})->name('site.home');
 
 
 Route::get('/meusagendamento', function () {
@@ -38,9 +35,9 @@ Route::get('/cadastro', function () {
     return view('site.cadastro');
 })->name('site.cadastro');
 
-Route::get('/login', function () {
-    return view('site.login');
-})->name('site.login');
+Route::get('/logar', function () {
+    return view('site.logar');
+})->name('site.logar');
 
 Route::get('/sobre', function () {
     return view('site.sobre');
@@ -54,19 +51,27 @@ Route::get('/agendar', function () {
     return view('site.agendar');
 })->name('site.agendar');
 
-Route::get('admin/dash', function () {
-    return view('admin/dash');
-})->name('admin/dash');
+Route::get('/about', function () {
+    return view('site.about');
+})->name('site.about');
 
 
-//controlle
-Route::prefix('admin')->namespace('Admin')->group(function(){
-    Route::resource('comentario', 'ComentarioController');
-    Route::resource('cadastro', 'CadastroController');
-    Route::resource('agenda', 'AgendaController');
+Route::get('/', 'PageController@comentarios')->name('comentario');
+
+
+
+//middleware/Controllers
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::prefix('admin')->namespace('Admin')->group(function () {
+        Route::resource('comentario', 'ComentarioController');
+        Route::resource('cadastro', 'CadastroController');
+        Route::resource('agenda', 'AgendaController');
+    });
 });
 
 
 
+Auth::routes();
 
-
+Route::get('auth/dash', 'HomeController@index')->name('home');

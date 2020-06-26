@@ -51,16 +51,21 @@
         </div>
       </div>
     </div>
+    
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10" style="margin-top: 59px">
+        <p style="margin-top: 59px"><strong>Observação:</strong> Não atendemos aos domingos,<br> datas não disponiveis
+          estaram
+          em vermelho</p>
+        <button type="submit" class="btn btn-success">Agendar</button>
+      </div>
+    </div>
+
+
+
   </form>
 
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10" style="margin-top: 59px">
-      <p style="margin-top: 59px"><strong>Observação:</strong> Não atendemos aos domingos,<br> datas não disponiveis
-        estaram
-        em vermelho</p>
-      <button type="submit" class="btn btn-success">Agendar</button>
-    </div>
-  </div>
+ 
 
 
 

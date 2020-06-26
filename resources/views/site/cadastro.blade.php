@@ -28,7 +28,7 @@
     </div>
     <div class="col-md-4 mb-3">
       <label for="phone">Telefone</label>
-      <input name="phone" type="text" class="form-control phone-ddd-mask" placeholder="Ex.: (00) 0000-0000">
+      <input name="phone" type="text" class="form-control " phone-ddd-mask="00-00000-0000" maxlength="10" placeholder="Ex.: (00) 0000-0000">
     </div>
     <div class="col mb-4">
       <label for="email">Email:</label>
@@ -48,4 +48,5 @@
     </div>
   </div>
 </form>
+
 @endsection

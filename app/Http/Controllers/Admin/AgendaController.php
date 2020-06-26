@@ -30,7 +30,7 @@ class AgendaController extends Controller
      */
     public function create()
     {
-        return view('admin.agenda.create');
+        return view('admin.agendas.create');
     }
 
     /**

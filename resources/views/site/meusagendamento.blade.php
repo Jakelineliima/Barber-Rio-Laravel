@@ -16,8 +16,7 @@
 
     <p><strong>RG:</strong> 14.530.487-65 <strong>CPF:</strong>548.798.462-12</p>
 
-    <p><strong>Endereço:</strong> Rua Carlos Gomes <strong>Bairro:</strong>Paineiras
-      <strong>N°</strong>530 São Paulo</p>
+    <p><strong>Telefone:</strong> 16 99601-8690</p>
 
     <div class="card-body btnuser">
       <a href="#" class="btn edit">Editar</a>

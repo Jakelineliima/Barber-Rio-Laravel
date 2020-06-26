@@ -75,7 +75,7 @@
           <a style="color: #fff" href="#">Minha Conta</a>
           <ul class="fixamenu fxagend">
             <li>
-              <a style="margin-left: 34px;" href="{{ route('site.login') }}">Entrar</a>
+              <a style="margin-left: 34px;" href="{{ route('site.logar') }}">Entrar</a>
             </li>
             <li>
               <a style="margin-left: 33px;" href="{{ route('site.cadastro') }}">Criar conta</a>
@@ -144,7 +144,7 @@
             Minha conta
           </a>
           <div class="dropdown-menu menusub" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item menudrop" href="{{ route('site.login') }}">Entrar na minha conta</a>
+            <a class="dropdown-item menudrop" href="{{ route('site.logar') }}">Entrar na minha conta</a>
             <a class="dropdown-item menudrop" href="{{ route('site.cadastro') }}">Criar conta</a>
 
           </div>

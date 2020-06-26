@@ -25,7 +25,7 @@
       para cuidar de você como merece!</p>
   </div>
   <h1 class=" d-flex justify-content-center comentarios">COMENTÁRIO DOS CLIENTES</h1>
-   
+
 
 
   <!-----
@@ -61,7 +61,12 @@
       <span class="sr-only text-dark">Próximo</span>
     </a>
   </div>--->
-
+  <ul>
+   @foreach ($comentarios as $comentario)
+    <li>{{ $comentario->name }}</li>
+   @endforeach 
+  </ul>
+  
   <h2 style="text-align: center; font-size:30px; margin-top:39px">Envie sua opinião sobre nossos serviços</h2>
 
   <form action="{{ route('comentario.store') }}" method="post">

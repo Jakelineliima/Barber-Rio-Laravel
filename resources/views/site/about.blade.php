@@ -4,16 +4,15 @@
 <img class="img-fluid" src="../img/banner.png" alt="Banner">
 <div class="container">
     <button type="button" class="btn btn-lg about">
-    <a href="{{ route('site.about') }}">Pagina em ingles</a></button>
-
+        <a href="{{ route('site.sobre') }}">Pagina em português</a></button>
     <p style="margin: 44px 0 44px 0;">
-        BarberRio foi feita pra você que deseja receber cuidados com os melhores
-        profissionais, fundada em 2002 na cidade de São Paulo, retomando os antigos
-        custumes dos homens de tomar bebidas no barbeiro.
+        The BarberRio was made for you who want to receive care with
+        best professionals, founded in 2002 in the city of São Paulo, resuming the old
+        male guards drinking drinks at the barbershop.
     </p>
     <img class="img-fluid" src="../img/bannersobre.jpg" alt="Banner com uma gilete">
 
-    <h3 class="txtbar">Um pouco do nosso bar com as bebidas oferecidas.</h3>
+    <h3 class="txtbar">A little bit of our bar with the drinks offered.</h3>
     <div class="bar">
         <div class="row baralign">
             <img src="../img/jack.jpg" class="rounded float-left" alt="...">

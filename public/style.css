@@ -14,9 +14,11 @@ a:hover {
     text-decoration: none;
     color: #fff;
 }
-.fixamenu{
+
+.fixamenu {
     text-align: center;
 }
+
 a {
     color: #fff;
     text-decoration: none;
@@ -53,6 +55,11 @@ footer a {
 footer a:hover {
     color: rgb(206, 199, 198);
     text-decoration: none;
+}
+
+.about {
+    background: #263238;
+    color: #fff;
 }
 
 .menuburgue {
