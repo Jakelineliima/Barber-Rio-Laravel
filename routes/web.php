@@ -73,5 +73,4 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 Auth::routes();
-
 Route::get('auth/dash', 'HomeController@index')->name('home');
